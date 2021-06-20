@@ -1,0 +1,357 @@
+:root{
+    --fontBase:'Poppins', sans-serif; 
+    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%); 
+    --headline1: bold 90px/153.71px var(--fontBase);
+    --headline2: bold 59px/95px var(--fontBase);
+    --headline3: bold 48px/77px var(--fontBase);
+    --headline4: bold 34px/55px var(--fontBase);
+    --headline5: bold 24px/38px var(--fontBase);
+    --body1: normal 16px/25px var(--fontBase);
+    --body2: normal 14px/22px var(--fontBase);
+    --button: bold 14px/22px var(--fontBase);
+    --caption: normal 12px/19px var(--fontBase);
+    --purple:#310A90;
+    --green:#42E2B8;
+    --white:#ffffff;
+
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: var(--gradient);
+    min-height: 100vh;
+    font: var(--body1);
+    scroll-behavior: smooth;
+}
+button.boton-pripmary{  
+    width: 153px;
+    height: 49px;
+    text-transform: uppercase;
+    background-color: var(--purple);
+    border: 0;
+    border-radius: 4px;
+    color: var(--white);
+    font: var(--button);
+    padding: 6.5px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+}
+button.boton-pripmary a{  
+    color: var(--white);
+    text-decoration: none;
+
+}
+button.boton-secundary{  
+    width: 153px;
+    height: 49px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    color: var(--purple);
+    font: var(--button);
+    padding: 6.5px 12px;
+    cursor: pointer;
+}
+button.boton-secundary a{  
+    text-decoration: none;
+    color: var(--purple);
+
+}
+.wrapper-header{
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+.wrapper-header header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-main{
+    padding: 0 16px;
+    max-width: 1132px;
+    margin: 0 auto;
+}
+.menu{
+   font: var(--button);
+   
+}
+.menu a{
+text-decoration: none;
+margin:0 20px;
+color: var(--white);
+}
+.menu .activo{
+    color: var(--purple);
+}
+.img{
+    text-align: center;    
+}
+.img, .saludo p{
+    margin: 16px 0;
+}
+.saludo{
+color: var(--purple);
+}
+.saludo:first-child{
+    font: var(--headline5);
+}
+.saludo h3:nth-child(2){
+    font: var(--headline3);
+}
+.saludo p{
+    font: var(--body1);
+}
+
+.redes{
+    display: flex;
+    column-gap: 16px;
+    padding-bottom: 24px;
+}
+.redes .icono img{
+    width: 24px;
+    height: 24px;   
+}
+.redes .icono{
+    background-color: var(--white);
+    width: 44px;
+    height: 44px;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descargar-curriculum button.boton-pripmary{
+   width: 100%;
+}
+.descripcion{
+    padding: 40px 0;
+    display: flex;
+    row-gap: 24px;
+    text-align: center;
+    color: var(--purple);
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.descripcion p{
+    font-size: 24px;
+    line-height: 38px;
+}
+.descripcion strong{
+    font-size: 24px;
+    line-height: 38px;
+}
+.descripcion .row-down{
+    display: flex;
+    justify-content: center;
+}
+.proyecto .imagen-proyecto{
+    text-align: center;
+}
+.proyecto .descripcion-proyecto{
+    padding: 40px 0;
+    display: block;
+}
+.proyecto .descripcion-proyecto a.enlace, .hablemos a.enlace{
+    width: auto;
+    background-color: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    padding: 4px 8px;
+    font: var(--headline5);
+    box-shadow: -4px 4px 1px var(--white);
+}
+.proyecto .descripcion-proyecto p{
+    margin: 16px 0;
+    color: var(--purple);
+}
+.proyecto .botones-proyecto{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.proyecto .botones-proyecto .boton-pripmary:nth-child(1){
+    order: 3;
+}
+.botones-proyecto button{
+    width: 100%;
+}
+.testimonio{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.content-testimonio{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(39.7657px);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+}
+.content-testimonio .img{
+    text-align: center;
+}
+.content-testimonio p{
+    padding: 0;
+}
+.content-testimonio p.descripcion{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+}
+.content-testimonio p.cargo{
+    font: var(--caption);
+    color: #310A90;
+    opacity: 0.5;
+}
+.hablemos{
+    padding-bottom: 80px;
+}
+.hablemos .descripcion-proyecto p{
+    color: var(--white);
+    font: var(--body1);
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario form label{
+    font-weight: 700;    
+    font-size: 16px;
+    color: var(--purple);
+}
+.formulario form label span{
+    color: #DA1414;
+    opacity: 0.8;
+}
+.formulario form input, .formulario form textarea{
+    padding: 12px 16px;
+    border-radius:8px ;
+    border: 1px solid #858C94;
+}
+.formulario form textarea{
+    max-width: 328px;
+    max-height: 134px;
+    min-width: 100%;
+    min-height: 134px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 16px;
+}
+.redes-footer{
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    font: var(--body1);
+    color: var(--white);
+}
+.menu{
+    display: none;
+}
+
+[id]{
+    scroll-margin-top: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .menu{
+        display: block;
+    } 
+
+    .hero{
+        display: flex;
+        justify-content: space-between;
+    }
+    .saludo-redes{
+        max-width: 543px;
+    }
+    .hero .img{
+        order: 2;
+    }
+    .descripcion{
+        max-width: 900px;
+        margin:  auto;
+    }
+    .proyecto{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    .impar .proyecto .imagen-proyecto{
+        order: 2;
+    }
+    .proyecto .descripcion-proyecto{
+        max-width: 449px;
+    }
+    .testimonio{
+        text-align: center;
+    }
+    .testimonio .img img{
+        width: 80px;
+        height: 80px;
+    }
+    .content-testimonio p.descripcion{
+        font: var(--headline5);
+    }
+    .content-testimonio p.cargo{
+        font: var(--body1);
+    }
+
+    .proyecto .botones-proyecto{
+        display:flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .proyecto .botones-proyecto .boton-pripmary:nth-child(1){
+        order: 3;
+    }
+    .botones-proyecto button{
+        width: 100%;
+    }
+    .hablemos{
+        max-width: 543px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .hablemos .form-desc a{
+       display: flex;
+        margin-bottom: 16px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .netnet .imagen-proyecto{
+       
+    padding-right: 200px;
+    }
+    .leonidas .proyecto .imagen-proyecto img{
+        width: 652px;
+        height: 392px;
+    }
+    .marvol .proyecto .imagen-proyecto img{
+        width: 638px;
+        height: 628px;
+    }
+    .netnet .proyecto .imagen-proyecto img{
+        width: 302px;
+        height: 536px;
+    }
+}
